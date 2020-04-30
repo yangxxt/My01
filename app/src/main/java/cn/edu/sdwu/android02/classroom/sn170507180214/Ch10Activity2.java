@@ -6,6 +6,7 @@ import android.provider.ContactsContract;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -50,6 +51,7 @@ public class Ch10Activity2 extends AppCompatActivity {
         }else if(requestCode==102){
             if(requestCode==RESULT_OK){
                String content=data.getDataString();
+                Log.i(Ch10Activity2.class.toString(),data.getData().toString());
                 Toast.makeText(this,content,Toast.LENGTH_SHORT).show();
             }else{
                 Toast.makeText(this,"cancel",Toast.LENGTH_SHORT).show();
