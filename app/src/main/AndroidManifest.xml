@@ -26,11 +26,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Ch10Activity2">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <receiver
@@ -61,14 +57,20 @@
             android:exported="true" />
 
         <activity android:name=".Ch12Activity2" />
-        <activity android:name=".Ch13Activity1"></activity>
-        <activity android:name=".Ch14Activity1"></activity>
+        <activity android:name=".Ch13Activity1" />
+        <activity android:name=".Ch14Activity1" />
 
         <provider
             android:name=".MyContentProvider"
             android:authorities="com.inspur.android02"
             android:enabled="true"
-            android:exported="true"></provider>
+            android:exported="true" />
+
+        <activity android:name=".Ch15Activity1">        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
     </application>
 
 </manifest>
