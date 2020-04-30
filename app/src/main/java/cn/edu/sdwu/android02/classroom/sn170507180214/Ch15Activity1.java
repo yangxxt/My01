@@ -29,6 +29,7 @@ public class Ch15Activity1 extends AppCompatActivity {
             cursor.close();
     }
 
+
     public void insert(View view){
         ContentValues contentValues=new ContentValues();
         contentValues.put("stuname","Tom");

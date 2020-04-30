@@ -61,6 +61,7 @@ public class MyContentProvider extends ContentProvider {
             case SINGLE_STUDENT:
                 return MIME_MAINTYPE_ITEM+"/student";
         }
+
         //通过Uri数据，利用UriMatcher判断请求的是单条数据还是多条数据
         // at the given URI.
         throw new UnsupportedOperationException("Not yet implemented");

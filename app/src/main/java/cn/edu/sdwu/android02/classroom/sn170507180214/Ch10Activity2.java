@@ -62,7 +62,6 @@ public class Ch10Activity2 extends AppCompatActivity {
                     Toast.makeText(this,dispName,Toast.LENGTH_SHORT).show();
                 }
                 cursor.close();
-
             }else{
                 Toast.makeText(this,"cancel",Toast.LENGTH_SHORT).show();
             }
