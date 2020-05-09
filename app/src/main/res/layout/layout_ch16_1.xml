@@ -29,7 +29,7 @@
             android:onClick="takephoto"
             android:layout_height="wrap_content" />
     </LinearLayout>
-    <TextView
+    <TextureView
         android:layout_width="match_parent"
         android:id="@+id/ch16_tv"
         android:layout_height="match_parent" />
